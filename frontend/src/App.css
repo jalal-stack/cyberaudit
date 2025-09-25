@@ -1,0 +1,20 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.main-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 2rem; background: rgba(0,0,0,0.3); backdrop-filter: blur(10px);
+}
+.logo { font-size: 1.5rem; font-weight: bold; }
+.nav-links { display: flex; gap: 1.5rem; align-items: center; }
+.nav-links a, .nav-links button {
+  color: white; text-decoration: none; background: none; border: 1px solid #4a90e2;
+  padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;
+}
+.scanner-page { padding: 2rem; max-width: 800px; margin: 0 auto; }
+.scanner-card { background: rgba(25,25,40,0.7); border-radius: 12px; padding: 2rem; margin: 2rem 0; }
+.input-with-icon { display: flex; background: #1a1a2e; border-radius: 8px; overflow: hidden; }
+.input-with-icon input { flex: 1; padding: 0.75rem; background: transparent; color: white; border: none; }
+.types-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 1rem; margin: 1rem 0; }
+.type-card { background: #0f3460; padding: 1rem; border-radius: 8px; display: flex; gap: 0.5rem; }
+.start-scan-btn { width: 100%; padding: 1rem; background: linear-gradient(90deg, #4a90e2, #2d7edf); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.main-footer { text-align: center; padding: 1rem; margin-top: 3rem; color: #aaa; }
