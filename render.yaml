@@ -1,12 +1,11 @@
 services:
-  # Backend (FastAPI)
   - type: web
     name: cyberaudit-backend
     env: python
     plan: free
     rootDir: backend
-    buildCommand: "./.render-build.sh"
-    startCommand: "./.render-start.sh"
+    buildCommand: ./.render-build.sh
+    startCommand: ./.render-start.sh
     autoDeploy: true
     envVars:
       - key: DATABASE_URL
@@ -14,14 +13,12 @@ services:
           name: cyberaudit-db
           property: connectionString
 
-  # Frontend (React + Vite)
-  - type: web
+  - type: static_site
     name: cyberaudit-frontend
-    env: node
     plan: free
     rootDir: frontend
-    buildCommand: "npm install && npm run build"
-    staticPublishPath: "dist"
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
     autoDeploy: true
     envVars:
       - key: VITE_API_URL
