@@ -1,6 +1,12 @@
-{
+
+ {
   "name": "cyberaudit",
   "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -10,9 +16,8 @@
     "react-i18next": "^14.0.0",
     "i18next-browser-languagedetector": "^7.2.0"
   },
-   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.2.0"
   }
 }
